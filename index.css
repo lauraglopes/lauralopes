@@ -1,0 +1,165 @@
+/* Começo a trabalhar com as propriedades do CSS, onde trabalho com as 
+alterações da interface do site, alterando cores de fonte e fundo, tipo de
+fonte e forma, além de incluir bordas. */
+
+body {
+    color : white;
+    background-color: black;
+    text-transform: uppercase;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 16px;
+}
+
+/* Aqui personalizo a tabela. Para que os itens fique um do lado do outro,
+utilizo os elementos DISPLAY e JUSTIFY-CONTENT. Para que fique sem a marcação
+desabilito com o elemento LIST-STYLE-Type. */
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+    border-style: solid;
+    border-radius: 16px;
+}
+
+/* Aqui edito o elemento A para que não fique na cor azul, pois havia 
+colocado um link. Então altero a cor, para a mesmo pré-definida no 
+elemento BODY. */
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* como inseri um avatar no site, tenho que estilizar o elemento IMG pois a
+foto ficou muito grande na página e também para personaliza-lá */
+
+header img {
+    width: 200px;
+    height: 250px;
+    border-color: black; 
+    border-style: solid;
+    border-radius: 90px;
+}
+
+/* Como foi criada uma classe para que fosse estruturada a imagem, aqui 
+faço o processo de estilização. */
+.centralizar {
+    text-align: center;
+}
+.lateral {
+    width: 1800px;
+    height: 200px;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+
+}
+h1 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 200;
+}
+h2 {
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-style: italic;
+}
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+
+}
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+footer a {
+    margin-left: 16px;
+    text-align: center;
+}
+/* aqui utilizei o elemento HOVER para que quando passasse o mouser pela
+pelo link, cause umefeito de seleção. */
+nav a:hover {
+    color: blue;
+}
+footer a:hover {
+    color: blue;
+}
+
+/* Esse parametro CONTAINER foi utilizado, para que os textos da 
+pagina do site fique contida em uma margem personalizada.  */
+.container {
+    padding: 0px 50px;
+}
+/* Como foi criada uma classe para que fosse estruturada a imagem, aqui 
+faço o processo de estilização. */
+p {
+    text-align: justify;
+    font-style: italic;
+    text-transform: unset;
+}
+ol {
+    color: red;
+    border-style: solid;
+    list-style: circle;
+    justify-content: space-between;
+    border-color: white;
+    text-transform: capitalize;
+    display: flex;
+    padding: 16px;
+}
+section img {
+    width: 100px;
+    height: 100px;
+}
+section p {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 25 75%;
+}
+
+form [type="submit"]{
+    height: 30px;
+    width: 50%;
+    font-size: 15px;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+}
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input {
+    margin-top: 16px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+}
+textarea{
+    margin-top: 16px;
+    font-size: 15px;
+}
